@@ -26,7 +26,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Xamarin.Forms/3.3.0.967583": {
+      "Xamarin.Forms/3.4.0.1008975": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -188,10 +188,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Xamarin.Forms/3.3.0.967583": {
-      "sha512": "aebAEUHkER6WRo4WpsDd8jq4EudSl3WS4n7Pxcq8ea+x9fHi9PstCU0dU2D5PGvSeKa3yEFSpRljOEjI7qtsNA==",
+    "Xamarin.Forms/3.4.0.1008975": {
+      "sha512": "036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
       "type": "package",
-      "path": "xamarin.forms/3.3.0.967583",
+      "path": "xamarin.forms/3.4.0.1008975",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -330,7 +330,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.3.0.967583.nupkg.sha512",
+        "xamarin.forms.3.4.0.1008975.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
@@ -338,7 +338,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "Xamarin.Forms >= 3.3.0.967583"
+      "Xamarin.Forms >= 3.4.0.1008975"
     ]
   },
   "packageFolders": {
@@ -390,7 +390,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.3.0.967583, )"
+            "version": "[3.4.0.1008975, )"
           }
         },
         "imports": [
