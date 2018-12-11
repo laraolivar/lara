@@ -13,5 +13,15 @@ namespace App5
         {
             InitializeComponent();
         }
-    }
+
+		private void Button_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushModalAsync(new Page1());
+		}
+
+		private void Button_Clicked_1(object sender, EventArgs e)
+		{
+			Navigation.PushModalAsync(new Page2());
+		}
+	}
 }

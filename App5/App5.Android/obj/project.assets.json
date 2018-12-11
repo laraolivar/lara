@@ -473,7 +473,7 @@
       ]
     },
     "Xamarin.Android.Support.Design/27.0.2.1": {
-      "sha512": "Lc7sN6n4XQexZEnRm1Q+HGA+5xNPttM8vw/BNLsoKZy6Ao0uEzUbk+HDdYQwH9UAEJ01MBe0hp4sd0Uy7y/m4A==",
+      "sha512": "0VTL0Hg4f+tWYlMI8tqfWOnm0usbhTRK3O/qMQMLeT1pY1LpZxmuLID/Vvehp8TrpIrTpt3fJFejHfkCmyvfMw==",
       "type": "package",
       "path": "xamarin.android.support.design/27.0.2.1",
       "files": [
@@ -546,7 +546,7 @@
       ]
     },
     "Xamarin.Android.Support.v7.AppCompat/27.0.2.1": {
-      "sha512": "MumW84Eb14Lt+nXFWzDaDEn2y4MtDJHGDZcSAtXtLwt8QbG5wU0HNX1DGM1qNtanFltIwoyiDNEuqGxYPthhyw==",
+      "sha512": "Tz0VmlR8TqvZ7crtymV2tQu8f2LZyDB7IGsnt3dj0/qfzPRmH6VkqoofxjyXM0sxqO5hFiR0VxhZdnsNYj0T3Q==",
       "type": "package",
       "path": "xamarin.android.support.v7.appcompat/27.0.2.1",
       "files": [
@@ -795,20 +795,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bisita\\.nuget\\packages\\": {}
+    "C:\\Users\\SimpleviaPC2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bisita\\Source\\Repos\\App5\\App5\\App5.Android\\App5.Android.csproj",
+      "projectUniqueName": "D:\\Projects\\lara\\App5\\App5.Android\\App5.Android.csproj",
       "projectName": "App5.Android",
-      "projectPath": "C:\\Users\\Bisita\\Source\\Repos\\App5\\App5\\App5.Android\\App5.Android.csproj",
-      "packagesPath": "C:\\Users\\Bisita\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bisita\\Source\\Repos\\App5\\App5\\App5.Android\\obj\\",
+      "projectPath": "D:\\Projects\\lara\\App5\\App5.Android\\App5.Android.csproj",
+      "packagesPath": "C:\\Users\\SimpleviaPC2\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\lara\\App5\\App5.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Bisita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SimpleviaPC2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -821,8 +821,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Bisita\\Source\\Repos\\App5\\App5\\App5\\App5.csproj": {
-              "projectPath": "C:\\Users\\Bisita\\Source\\Repos\\App5\\App5\\App5\\App5.csproj"
+            "D:\\Projects\\lara\\App5\\App5\\App5.csproj": {
+              "projectPath": "D:\\Projects\\lara\\App5\\App5\\App5.csproj"
             }
           }
         }
