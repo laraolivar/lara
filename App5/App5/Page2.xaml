@@ -2,38 +2,66 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App5.Page2">
-    <AbsoluteLayout BackgroundColor="#ff8080">
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="0.33, 0, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="1, 0, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="boxSize"
+                        x:TypeArguments="x:Double"
+                <On Platform="iOS, Android, UWP" Value="50" />
+            </OnPlatform>
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="0, 0.33, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+            <Onplatform x:Key="rowHeight"
+                        x:TypeArguments="x:Int32"
+                 <On Platform="iOS, Android, UWP" Value="60" />"
+                </OnPlatform>
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="0.67, 0.33, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+                <local:DoubleToIntConverter x:Key="intConverter" />
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="0.33, 0.67, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="1, 0.67, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+    <ListView ItemsSource="{x:Static local:NamedColor.All}"
+              RowHeight="{StaticResource rowHeight}">
+    <ListView.ItemTemplate>
+       <DataTemplate>
+        <ViewCell>
+            <StackLayout Padding="5, 5, 0, 5"
+                         Orientation="Horizontal"
+                         Spacing="15">
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="0, 1, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+                <BoxView WidthRequest="{StaticResources boxSize}"
+                                 HeightRequest="{StaticResources boxSize}"
+                                 Color="{Binding Color}"/>
 
-        <BoxView Color="#8080ff"
-                     AbsoluteLayout.LayoutBounds="0.67, 1, 0.25, 0.25"
-                     AbsoluteLayout.LayoutFlags="All" />
+                <StackLayout Padding="5, 0, 0, 0"
+                                     Vertical Options="Center">
 
-    </AbsoluteLayout>
+                    <Label Text="{Binding FriendlyName}"
+                                   FontAttributes="Bold"
+                                   FontSize="Medium" />
+
+                    <StackLayout Orientation ="Horizontal"
+                                         Spacing="0">
+                        <Label Text="{Binding Color.R,
+                                       Converter={StaticResource intConverter},
+                                       ConverterParameter=225,
+                                       StringFormat='R={0:X2}'}" />
+
+                        <Label Text="{Binding Color.G,
+                                       Converter={StaticResource intConverter},
+                                       ConverterParameter=225,
+                                       StringFormat=', G={0:X2}'}" />
+
+                        <Label Text="{Binding Color.G,
+                                       Converter={StaticResource intConverter},
+                                       ConverterParameter=225,
+                                       StringFormat=', B={0:X2}'}" />
+
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
